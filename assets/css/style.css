@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
 }
-
 .header {
   display: flex;
   flex-direction: column;
@@ -28,7 +26,6 @@ body {
   font-size: 2em;
   font-weight: bolt;
 }
-
 .header-text {
   margin: 20px;
 }
@@ -45,38 +42,36 @@ body {
   color: black;
   transition-delay: 0.2s;
 }
-.section1 {
+.development {
   background: #eaeaea;
   padding-bottom: 20px;
 }
-.section1-title,
-.section3-title {
+.development-title,
+.digital-needs-title {
   font-size: 1.5em;
   font-weight: bold;
   padding-top: 25px;
 }
-.section1-text,
-.section3-text {
+.development-text,
+.digital-needs {
   display: block;
   margin: 20px auto;
   max-width: 800px;
 }
-
-.section2 {
+.direction-development {
   display: flex;
   justify-content: center;
   background: #333;
 }
-.section2-card {
+.direction-development-card {
   max-width: 250px;
   background-color: #fff;
   margin: 30px 0;
 }
-.section2-card:not(nth-last-child) {
+.direction-development-card:not(nth-last-child) {
   margin-left: 20px;
 }
-
-.section2-img {
+.direction-development-img {
   width: 250px;
   height: 150px;
   background: #333;
@@ -84,36 +79,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.section2-title {
+.direction-development-title {
   font-size: 1.17em;
   font-weight: bold;
   margin: 40px 0;
 }
-.section2-text {
+.direction-development-text {
   margin: 0 15px 30px;
 }
-.section3 {
+.digital-needs {
   background-color: #fff;
   padding-bottom: 20px;
 }
-.section4 {
+.information {
   display: flex;
   color: white;
 }
-.section4-contacts {
+.information-contacts {
   background-color: #2690d4;
   padding: 40px;
 }
-.section4-contacts-title,
-.section4-about-title {
+.information-contacts-title,
+.information-about-title {
   font-size: 1.5em;
   margin: 20px auto;
 }
-.section4-contacts-email {
+.information-contacts-email {
   padding-top: 20px;
 }
-.section4-about {
+.information-about {
   background-color: #333;
   padding: 40px;
 }
