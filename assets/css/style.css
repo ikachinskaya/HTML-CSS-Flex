@@ -1,5 +1,7 @@
 /** @format */
-
+:root {
+  font-size: 16px;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,20 +10,23 @@
 body {
   background: #333;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
 }
 .header {
   min-height: 450px;
   width: 100%;
-  color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
+}
+.header,
+.information,
+.footer {
+  color: #fff;
 }
 .header::before {
   content: "";
@@ -41,16 +46,39 @@ body {
 }
 .header-container,
 .development-container,
+.direction-development-container,
 .digital-needs-container {
   max-width: 1200px;
   margin: 0 auto;
 }
+.header-title,
+.development-title,
+.direction-development-card-title,
+.digital-needs-title {
+  margin-bottom: 10px;
+}
 .header-title {
   font-size: 2em;
-  font-weight: bolt;
 }
-.header-text {
-  margin: 20px 0px;
+.header-title,
+.development-title,
+.direction-development-card-title,
+.digital-needs-title,
+.information-contacts-title,
+.information-about-title {
+  font-weight: bold;
+}
+.development-title,
+.direction-development-card-title,
+.digital-needs-title,
+.information-contacts-title,
+.information-about-title {
+  font-size: 1.5em;
+}
+.header-text,
+.information-contacts-title,
+.information-about-title {
+  margin-bottom: 20px;
 }
 .header-link {
   display: inline-block;
@@ -70,91 +98,65 @@ body {
   color: #000;
   transition-delay: 0.2s;
 }
-.development {
+.development,
+.digital-needs,
+.information-contacts,
+.information-contacts,
+.information-about {
   background: #eaeaea;
+  padding: 20px;
 }
-
-.development-container {
+.development-text {
   column-count: 2;
-}
-.development-title,
-.digital-needs-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-top: 25px;
-}
-.development-text,
-.digital-needs-text {
-  padding-bottom: 20px;
 }
 .direction-development {
   display: flex;
-  justify-content: center; 
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px;
 }
 .hidden-title {
   position: absolute;
-  left:5000%;
+  left: 5000%;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 .direction-development-card {
-  max-width: 250px;
+  max-width: 300px;
   background-color: #fff;
-  margin: 30px 0;
-}
-.direction-development-card:not(nth-last-child) {
-  margin-left: 20px;
+  margin: 20px;
 }
 .direction-development-img {
-  width: 250px;
-  height: 150px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.direction-development-title {
-  font-size: 1.17em;
-  font-weight: bold;
-  margin: 40px 0;
+.direction-development-card-content {
+  padding: 20px;
 }
-.direction-development-text {
-  padding: 0 15px 30px;
-}
-.digital-needs {
-  background-color: #fff;
-  padding-bottom: 20px;
-}
-.information {
-  display: flex;
-  color: #fff;
-}
-.information-contacts,
-.information-about {
+.small-section {
   width: 50%;
-  padding: 40px;
 }
 .information-contacts {
   background-color: #2690d4;
 }
-
-.information-contacts-title,
-.information-about-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 20px auto;
+.information-about {
+  background: #444;
 }
 .information-contacts-email {
-  padding-top: 20px;
+  margin-top: 20px;
 }
-
 .footer {
   min-height: 80px;
   display: flex;
-  background-color: #000;
-  color: #fff;
-}
-.footer-text {
+  justify-content: center;
   text-align: center;
-  padding-top: 30px;
-  margin: 0 auto;
+  background-color: #000;
+  padding: 20px;
 }
 .footer-link {
   color: #2690d4;

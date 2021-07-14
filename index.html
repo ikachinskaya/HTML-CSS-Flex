@@ -1,99 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Flex</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header-container">
-      <h1 class="header-title">Welcome to Acme Web Solutions</h1>
-      <p class="header-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quos corrupti atque minima veritatis illo
-        laudantium, ipsa quo quia facere! </p>
-      <a href="#" class="header-link">read more</a>
-    </div>
-  </header>
-  <main>
-    <section class="development">
-      <h2 class="development-title">Web & Application Development</h2>
-      <div class="development-container">
-        <p class="development-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex
-          aspernatur totam vel officiis maiores voluptatibus, aliquam veritatis
-          non optio distinctio repellat asperiores laudantium inventore eaque
-          odit a, rem hic mollitia ad consectetur alias. Culpa impedit fuga
-          voluptatem consequatur harum.
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Flex</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1 class="header-title">Welcome to Acme Web Solutions</h1>
+        <p class="header-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quos
+          corrupti atque minima veritatis illo laudantium, ipsa quo quia facere!
         </p>
+        <a href="#" class="header-link">read more</a>
       </div>
-    </section>
-    <section class="direction-development">
-      <h2 class="hidden-title">Title</h2>
-      <div class="direction-development-card">
-        <img class="direction-development-img" src="./assets/img/photo1.jpeg" alt="Web Development" />
-        <h3 class="direction-development-title">Web Development</h3>
-        <p class="direction-development-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          beatae a! Numquam laudantium corrupti ipsum odit illum aliquam? Quo,
-          consectetur?
-        </p>
-      </div>
-      <div class="direction-development-card">
-        <img class="direction-development-img" src="./assets/img/photo2.jpeg" alt="Mobile Application" />
-        <h3 class="direction-development-title">Mobile Application</h3>
-        <p class="direction-development-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          beatae a! Numquam laudantium corrupti ipsum odit illum aliquam? Quo,
-          consectetur?
-        </p>
-      </div>
-      <div class="direction-development-card">
-        <img class="direction-development-img" src="./assets/img/photo3.jpeg" alt="Tech Marketing" />
-        <h3 class="direction-development-title">Tech Marketing</h3>
-        <p class="direction-development-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-          beatae a! Numquam laudantium corrupti ipsum odit illum aliquam? Quo,
-          consectetur?
-        </p>
-      </div>
-    </section>
-    <section class="digital-needs">
-      <h3 class="digital-needs-title">We handle all of your digital needs</h3>
-      <div class="digital-needs-container">
-        <p class="digital-needs-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          amet cupiditate sint rerum quidem placeat laudantium soluta eligendi
-          natus repudiandae?
-        </p>
-      </div>
-    </section>
-    <section class="information">
-      <section class="information-contacts">
-        <h3 class="information-contacts-title">Contacts Us</h3>
-        <p class="information-contacts-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio
-          magnam debitis repudiandae ipsa eius ducimus necessitatibus, qui
-          eligendi mollitia.
-        </p>
-        <p class="information-contacts-email">contact@ancmenwebsolutios.test</p>
+    </header>
+    <main>
+      <section class="development">
+        <div class="development-container">
+          <h2 class="development-title">Web & Application Development</h2>
+          <p class="development-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex
+            aspernatur totam vel officiis maiores voluptatibus, aliquam
+            veritatis non optio distinctio repellat asperiores laudantium
+            inventore eaque odit a, rem hic mollitia ad consectetur alias. Culpa
+            impedit fuga voluptatem consequatur harum.
+          </p>
+        </div>
       </section>
-      <section class="information-about">
-        <h3 class="information-about-title">About Our Company</h3>
-        <p class="information-about-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Accusantium, hic voluptates. Impedit nulla alias fugit esse odit
-          voluptatem inventore necessitatibus?
-        </p>
+      <section class="direction-development">
+        <h2 class="hidden-title">Title</h2>
+        <div class="direction-development-container flex-container">
+          <section class="direction-development-card">
+            <img
+              class="direction-development-img"
+              src="./assets/img/photo1.jpeg"
+              alt="Web Development"
+            />
+            <div class="direction-development-card-content">
+              <h3 class="direction-development-card-title">Web Development</h3>
+              <p class="direction-development-card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+                beatae a! Numquam laudantium corrupti ipsum odit illum aliquam?
+                Quo, consectetur?
+              </p>
+            </div>
+          </section>
+          <section class="direction-development-card">
+            <img
+              class="direction-development-img"
+              src="./assets/img/photo2.jpeg"
+              alt="Web Development"
+            />
+            <div class="direction-development-card-content">
+              <h3 class="direction-development-card-title">Web Development</h3>
+              <p class="direction-development-card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+                beatae a! Numquam laudantium corrupti ipsum odit illum aliquam?
+                Quo, consectetur?
+              </p>
+            </div>
+          </section>
+          <section class="direction-development-card">
+            <img
+              class="direction-development-img"
+              src="./assets/img/photo3.jpeg"
+              alt="Web Development"
+            />
+            <div class="direction-development-card-content">
+              <h3 class="direction-development-card-title">Web Development</h3>
+              <p class="direction-development-card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+                beatae a! Numquam laudantium corrupti ipsum odit illum aliquam?
+                Quo, consectetur?
+              </p>
+            </div>
+          </section>
+        </div>
       </section>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-text">Acme Web Solutions</div>
-    <div class="footer-text">Project By <a class="footer-link " href="#">Traversy Media</a></div>
-  </footer>
-</body>
+      <section class="digital-needs">
+        <div class="digital-needs-container">
+          <h3 class="digital-needs-title">
+            We handle all of your digital needs
+          </h3>
+          <p class="digital-needs-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            amet cupiditate sint rerum quidem placeat laudantium soluta eligendi
+            natus repudiandae?
+          </p>
+        </div>
+      </section>
+      <div class="information flex-container">
+        <section class="information-contacts small-section">
+          <h3 class="information-contacts-title">Contacts Us</h3>
+          <p class="information-contacts-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio
+            magnam debitis repudiandae ipsa eius ducimus necessitatibus, qui
+            eligendi mollitia.
+          </p>
+          <p class="information-contacts-email">
+            contact@ancmenwebsolutios.test
+          </p>
+        </section>
+        <section class="information-about small-section">
+          <h3 class="information-about-title">About Our Company</h3>
+          <p class="information-about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, hic voluptates. Impedit nulla alias fugit esse odit
+            voluptatem inventore necessitatibus?
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="small-section">
+        <p>Acme Web Solutions</p>
+      </div>
+      <div class="small-section">
+        <p>Project By <a class="footer-link" href="#">Traversy Media</a></p>
+      </div>
+    </footer>
+  </body>
 </html>
